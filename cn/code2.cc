@@ -20,7 +20,7 @@ int main (int argc, char *argv[])
 
   PointToPointHelper pointToPoint;
   pointToPoint.SetDeviceAttribute ("DataRate", StringValue ("5Mbps"));
-  pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"));
+  pointToPoint.SetChannelAttribute ("Delay", StringValue ("2ms"))
 
   NetDeviceContainer devices;
   devices = pointToPoint.Install (nodes);
